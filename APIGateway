@@ -1,0 +1,11 @@
+debug=true
+logging.level.org.springframework.cloud.gateway=DEBUG
+logging.level.reactor.netty.http.client=DEBUG
+server.port=9943
+management.endpoints.web.exposure.include='*'
+eureka.client.service-url.defaultZone=http://localhost:8762/eureka
+eureka.instance.prefer-ip-address='true'
+
+###security config###
+pfe.app.jwtSecret= SecretKey
+pfe.app.jwtExpirationMs= 86400000
